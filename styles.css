@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: hsl(0, 100%, 74%) url("./images/bg-intro-desktop.png") no-repeat;
+    color: white;
+    background-size: 100vw 100vh;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5% 10%;
+}
+.heading{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 20px 55px;
+}
+.description{
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 20px 55px;
+    word-spacing: 1px;
+}
+.form-section{
+    width: 80%;
+    margin: auto;
+}
+.info{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 6px hsla(249, 10%, 26%, 0.295);
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.info span{
+    color: hsl(246, 25%, 77%);
+}
+.form{
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px hsla(249, 10%, 26%, 0.295);
+    margin: 15px 0;
+}
+.input-field{
+    position: relative;
+}
+input{
+    display: block;
+    width: 75%;
+    height: 40px;
+    margin: 15px auto 5px;
+    border-radius: 5px;
+    outline: none;
+}
+.field{
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0 20px;
+    color: hsla(249, 10%, 26%);
+}
+.field:focus{
+    border: 1px solid black;
+}
+.error-img{
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    visibility: hidden;
+}
+.error-msg{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.65em;
+    font-weight: 400;
+    text-align: right;
+    margin: 0 35px;
+    display: none;
+}
+.input-error .field{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+.input-error .error-img{
+    visibility: visible;
+}
+.input-error .error-msg{
+    display: block;
+}
+.submit{
+    background-color: hsl(154, 59%, 51%);
+    width: 84.5%;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid hsla(249, 10%, 26%, 0.699);
+}
+.submit:hover{
+    cursor: pointer;
+    border: none;
+}
+.tnc{
+    width: 84.5%;
+    margin: 5px auto;
+    font-weight: 400;
+    font-size: 0.6em;
+    color: hsla(249, 10%, 26%);
+}
+.highlight{
+    color: hsl(0, 100%, 74%);
+}
