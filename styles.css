@@ -5,28 +5,33 @@ body{
     background: hsl(0, 100%, 74%) url("./images/bg-intro-desktop.png") no-repeat;
     color: white;
     background-size: 100vw 100vh;
+    margin: 6% 10%;
 }
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
-    margin: 3.5% 10%;
+}
+.description-section{
+    width: 85%;
+    margin: auto;
 }
 .heading{
     font-weight: 700;
-    font-size: 3em;
-    margin: 20px 55px;
+    font-size: 2.5em;
+    margin: 15px 0;
 }
 .description{
     font-weight: 400;
     font-size: 0.9em;
-    margin: 20px 55px;
+    margin: 15px 0;
     word-spacing: 1px;
 }
 .form-section{
     width: 80%;
+    min-width: 400px;
     margin: auto;
 }
 .info{
@@ -115,4 +120,21 @@ input{
 }
 .highlight{
     color: hsl(0, 100%, 74%);
+}
+@media (max-width: 1024px){
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+    .heading{
+        margin: 10px 0;
+        font-size: 2em;
+    }
+    .description{
+        margin: 10px 0;
+    }
+    .form-section{
+        min-width: 350px;
+    }
 }
